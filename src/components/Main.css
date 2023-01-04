@@ -1,0 +1,97 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.description-section {
+    background-image: url('../assets/purpleBg.jpg');
+    background-size: cover;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    width: 45%;
+    background-position: -370px;
+    
+}
+
+.description-section .description-article {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    padding: 50px;
+}
+
+.description-section .description-article h3 {
+    text-align: center;
+    width: auto;
+    font-size: 4rem;
+}
+
+.description-section .description-article p {
+    text-align: left;
+    text-transform: capitalize;
+    font-family: Caveat;
+    font-weight: 600;
+    
+}
+
+.description-section .description-article button {
+    background: rgb(37,0,99);
+    background: linear-gradient(60deg, rgba(37,0,99,0.36738445378151263) 0%, rgba(62,0,136,1) 100%);
+    border: none;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    font-size: 20px;
+    font-weight: 600;
+    justify-self: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: .5s;
+    padding: 10px;
+    width: 150px;
+
+}
+
+.description-section .description-article button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.nike-section{
+    background-image: url('../assets/blackPurpleBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.nike-section .nike-shoes {
+    position: relative;
+    height: 85vh;
+    width: 55%;
+}
+
+
+.nike-section .nike-shoes img{
+    /* background-image: url('../assets/shoes.png');
+    background-size: 120%;
+    background-position: -175px ;
+    background-repeat: no-repeat; */
+    position: absolute;
+    top: -50px;
+    width: 140vh;
+    transition: 1s;
+    left: -225px;
+
+
+}
+
+.nike-section .nike-shoes img:hover {
+    transform: scale(1.05);
+}
