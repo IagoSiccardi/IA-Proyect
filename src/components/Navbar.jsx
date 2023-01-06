@@ -4,14 +4,14 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <div className='navbar-div'>
+    <header className='navbar-header'>
+        <img src={Logotype} alt="Nike LogoType"/>
         <ul className='navbar-ul'>
             <li>Style</li>
             <li>Purchase</li>
             <li>More</li>
         </ul>
-        <img src={Logotype} alt="Nike LogoType"/>
-    </div>
+    </header>
   )
 }
 

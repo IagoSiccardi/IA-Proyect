@@ -1,12 +1,12 @@
 .main {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: white;
 }
 
 .description-section {
-    background-image: url('../assets/purpleBg.jpg');
-    background-size: cover;
+   /*  background-image: url('../assets/purpleBg.jpg');
+    background-size: cover; */
     display: grid;
     height: 100vh;
     place-items: center;
@@ -37,44 +37,47 @@
 }
 
 .description-section .description-article button {
-    background: rgb(37,0,99);
-    background: linear-gradient(60deg, rgba(37,0,99,0.36738445378151263) 0%, rgba(62,0,136,1) 100%);
+    background: black;
     border: none;
+    border-radius: 25px;
     cursor: pointer;
-    font-family: 'Indie Flower';
-    font-size: 20px;
+    font-family: 'Roboto';
+    font-size: 1rem;
     font-weight: 600;
     justify-self: center;
     margin-top: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: .5s;
     padding: 10px;
     width: 150px;
-
+    color: white;
+    
+    
 }
 
 .description-section .description-article button:hover{
+    outline: 1px solid black;
     background-color: white;
     color: black;
-    transform: scale(1.05);
 }
 
 .nike-section{
-    background-image: url('../assets/blackPurpleBg.jpg');
+    /* background-image: url('../assets/blackPurpleBg.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     height: 100vh;
     width: 55%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
 }
 
 
 .nike-section .nike-shoes {
     position: relative;
-    height: 85vh;
-    width: 55%;
+    height: 325px;
+    width: 350px;
+    border: solid 3px black;
+
 }
 
 
@@ -84,14 +87,15 @@
     background-position: -175px ;
     background-repeat: no-repeat; */
     position: absolute;
-    top: -50px;
-    width: 140vh;
+    width: 140%;
     transition: 1s;
-    left: -225px;
+    left: -120px;
+    filter: grayscale(1); 
 
 
 }
 
 .nike-section .nike-shoes img:hover {
-    transform: scale(1.05);
+    filter: none; 
+
 }
