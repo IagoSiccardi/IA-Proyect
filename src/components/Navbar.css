@@ -1,10 +1,21 @@
-.navbar-div {
+.navbar-header {
+    background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    height: 50px;
 }
 
-.navbar-div .navbar-ul {
+.navbar-header img{
+    cursor: pointer;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    width: 90px;
+}
+
+.navbar-header .navbar-ul {
     align-items: center;
     color: white;
     display: flex;
@@ -12,25 +23,19 @@
     gap: 20px;
     justify-content: left;
     padding-left: 25px;
-    text-transform: uppercase;
-    font-family: Kalam;
+    text-transform: capitalize;
+    font-family: Roboto;
     font-weight: 400;
 
 }
 
-.navbar-div .navbar-ul li {
+.navbar-header .navbar-ul li {
     cursor: pointer;
-    transition: .5s;
+    transition: 1s;
 }
 
-.navbar-div .navbar-ul li:hover {
+.navbar-header .navbar-ul li:hover {
     transform: scale(1.05);
     border-bottom: 2px solid rgb(247, 1, 255);
 }
 
-.navbar-div img{
-    height: 125px;
-    width: 175px;
-    justify-self: right;
-    cursor: pointer;
-}
