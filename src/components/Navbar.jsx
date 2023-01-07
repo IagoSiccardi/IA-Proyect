@@ -1,5 +1,5 @@
 import React from 'react'
-import Logotype from "../assets/nikeIcon.png"
+import Logotype from "../assets/nikeIconWhite.png"
 import './Navbar.css'
 
 const Navbar = () => {
