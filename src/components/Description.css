@@ -1,0 +1,48 @@
+.mainDescription {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+
+   
+}
+
+.mainDescription .description-div {
+    width: 30%;
+}
+
+.mainDescription .description-div h3 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: right;
+}
+
+.mainDescription .description-div p {
+    font-size: 1.1rem;
+    font-family: Roboto;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* .mainDescription .description-div span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Nike';
+    font-weight: 700;
+} */
+
+.mainDescription .description-shoes {
+    width: 30%;
+    height: 300px
+}
+
+.mainDescription .description-shoes img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
