@@ -2,7 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./Timer.css";
 
 const Timer = ({ duration }) => {
-  const [time, setTime] = useState(duration);
+  const date = new Date().getTime()
+
+  const newDate = new Date('January 10, 2023 00:00:00').getTime()
+   
+  const finalDate = +newDate - date
+
+  const [time, setTime] = useState(finalDate);
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -33,6 +40,7 @@ const Timer = ({ duration }) => {
   };
 
   return <div className="timer">{getFormattedTime(time)}</div>;
+
 };
 
 export default Timer;

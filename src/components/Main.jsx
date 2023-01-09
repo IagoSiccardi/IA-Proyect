@@ -1,6 +1,7 @@
 import React from 'react'
 import './Main.css'
 import Shoes from '../assets/shoes.png'
+import Timer from './Timer'
 
 const Main = () => {
     return (
@@ -9,6 +10,7 @@ const Main = () => {
                 <section className='description-section'>
                     <article className='description-article'>
                         <h3>JORDAN DELTA</h3>
+                        <Timer duration={2 * 24 * 60 * 60 * 1000}/>
                         <button>Shop now</button>
                     </article>
                 </section>

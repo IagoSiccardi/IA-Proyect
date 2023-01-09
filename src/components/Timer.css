@@ -1,4 +1,10 @@
 .timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 3rem;
-    font-family: Roboto;
+    font-family: Nike;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
 }
