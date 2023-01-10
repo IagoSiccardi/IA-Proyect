@@ -11,6 +11,8 @@
     display: flex;
     flex-wrap: wrap;
     background-color: white;
+    position: relative;
+    
 }
 
 .description-section {
