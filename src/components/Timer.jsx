@@ -34,10 +34,10 @@ const Timer = ({ handleModal }) => {
     if (ms > 0) {
       return (
         <>
-          <li>{days} : </li>
-          <li>{hrs} :</li>
-          <li> {min} :</li>
-          <li> {sec}</li>{" "}
+          <li>{days}:</li>
+          <li>{hrs}:</li>
+          <li>{min}:</li>
+          <li>{sec}</li>
         </>
       );
     } else {
@@ -58,9 +58,9 @@ const Timer = ({ handleModal }) => {
           </ul>
           <ul className="timer-unitis">
             <li>Days</li>
-            <li>Hours</li>
-            <li>Minutes</li>
-            <li>Seconds</li>
+            <li>Hrs</li>
+            <li>Min</li>
+            <li>sec</li>
           </ul>
         </article>
       </article>

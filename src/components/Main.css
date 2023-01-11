@@ -16,13 +16,11 @@
 }
 
 .description-section {
-   /*  background-image: url('../assets/purpleBg.jpg');
-    background-size: cover; */
+   
     display: grid;
-    height: 100vh;
+    height: 40vh;
     place-items: center;
-    width: 50%;
-    background-position: -370px;
+    width: 100%;
     
 }
 
@@ -73,11 +71,9 @@
 }
 
 .nike-section{
-    /* background-image: url('../assets/blackPurpleBg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; */
-    height: 100vh;
-    width: 50%;
+    
+    height: 60vh;
+    width: 100%;
     display: grid;
     place-items: center;
 }
@@ -93,10 +89,7 @@
 
 
 .nike-section .nike-shoes img{
-    /* background-image: url('../assets/shoes.png');
-    background-size: 120%;
-    background-position: -175px ;
-    background-repeat: no-repeat; */
+    
     position: absolute;
     width: 140%;
     transition: 1s;
@@ -110,4 +103,29 @@
 .nike-section .nike-shoes img:hover {
     filter: none; 
 
+}
+
+
+@media (min-width: 500px) {
+
+}
+
+
+
+@media (min-width: 748px) {
+    .description-section {
+        height: 100vh;
+        width: 50%;
+    }
+    
+    .nike-section{
+    
+        height: 100vh;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 1080px) {
+  
 }

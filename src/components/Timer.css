@@ -12,17 +12,17 @@
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: grid;
-    height: 40vh;
+    height: 30vh;
     position: absolute;
     place-content: center;
-    top: calc(50vh - 20vh);
-    right: calc(50% - 40vh);
-    width: 80vh;
+    top: calc(50vh - 15vh);
+    right: calc(50% - 20vh);
+    width: 40vh;
 }
 
 .timer-modal .close {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
     right: 20px;
     top: 10px;
@@ -32,14 +32,13 @@
 .timer-modal .timer-h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 3rem;
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.5rem;
     position: absolute;
     top: 45px;
     left: 0px;
     width: 100%;
     z-index: 0;
-
-     
 }
 
 .timer {
@@ -51,15 +50,74 @@
 
 .timer .timer-numbers {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    font-family: 'Material Symbols Outlined';
+    font-size: 2rem;
+    justify-content: space-evenly;
+}
+
+.timer .timer-numbers li {
+    width: 30%;
+    text-align: center;
+    padding: 5px;
 }
 
 .timer-unitis {
     display: flex;
-    font-size: 15px;
+    font-size: 10px;
+    font-family: 'Material Symbols Outlined';
     align-items: center;
-    justify-content: space-between;
-    gap: px;
-    font-family: Roboto;
+    justify-content: space-evenly;
+    text-align: center;
 }
+
+.timer-unitis li {
+    width: 20%;
+}
+
+
+@media (min-width: 500px) {
+    .timer-modal {
+        height: 30vh;
+        top: calc(50vh - 15vh);
+        right: calc(50% - 25vh);
+        width: 50vh;
+    }
+    
+    .timer-modal .timer-h2 {
+        font-size: 2rem;
+    }
+    
+    .timer .timer-numbers {
+        font-size: 2rem;
+    }
+
+    .timer-modal .close {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media (min-width: 748px) {
+    
+    .timer-modal {
+        height: 40vh;
+        top: calc(50vh - 20vh);
+        right: calc(50% - 40vh);
+        width: 80vh;
+    }
+    
+    .timer-modal .timer-h2 {
+        font-size: 2.5rem;
+    }
+    
+    .timer .timer-numbers {
+        font-size: 2.5rem;
+    }
+
+    .timer-modal .close {
+        font-size: 3rem;
+    }
+}
+
+
