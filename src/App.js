@@ -8,11 +8,15 @@ function App() {
 
   const [modal, setModal] = useState(true)
 
+  const handleModal = () => {
+    setModal(!modal)
+  }
+
   return (
     <div className="App">
-      {modal && <Timer/>}
+      {modal && <Timer handleModal={handleModal}/>}
       <Navbar/>
-      <Main/> 
+      <Main handleModal={handleModal} modal={modal}/> 
       <Description/>
 
 

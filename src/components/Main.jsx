@@ -2,7 +2,7 @@ import React from 'react'
 import './Main.css'
 import Shoes from '../assets/shoes.png'
 
-const Main = () => {
+const Main = ({handleModal,modal}) => {
 
 
 
@@ -12,7 +12,7 @@ const Main = () => {
                 <section className='description-section'>
                     <article className='description-article'>
                         <h3>JORDAN DELTA</h3>
-                        <button>Shop now</button>
+                        <button onClick={handleModal}>Shop now</button>
                     </article>
                 </section>
                 <section className='nike-section'>

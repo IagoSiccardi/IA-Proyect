@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Timer.css";
 
-const Timer = () => {
+const Timer = ({ handleModal }) => {
   const date = new Date().getTime();
 
   const newDate = new Date("January 20, 2023 00:00:00").getTime();
@@ -32,16 +32,37 @@ const Timer = () => {
     const hrs = parseInt(totalHrs % 24);
 
     if (ms > 0) {
-      return `${days} : ${hrs} : ${min} : ${sec}`;
+      return (
+        <>
+          <li>{days} : </li>
+          <li>{hrs} :</li>
+          <li> {min} :</li>
+          <li> {sec}</li>{" "}
+        </>
+      );
     } else {
       return "0 : 0 : 0 : 0";
     }
   };
 
   return (
-    <section className="container-modal">
+    <section className="container-modal" onClick={(e) => e.target.className === "container-modal" && handleModal() } >
       <article className="timer-modal">
-        <div className="timer">{getFormattedTime(time)}</div>;
+        <span class="material-symbols-outlined close" onClick={handleModal}>
+          close
+        </span>
+        <h2 className="timer-h2">Release date</h2>
+        <article className="timer">
+          <ul className="timer-numbers">
+            {getFormattedTime(time)}
+          </ul>
+          <ul className="timer-unitis">
+            <li>Days</li>
+            <li>Hours</li>
+            <li>Minutes</li>
+            <li>Seconds</li>
+          </ul>
+        </article>
       </article>
     </section>
   );
