@@ -1,16 +1,16 @@
 .mainDescription {
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px;
-
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
    
 }
 
 .mainDescription .description-div {
-    width: 30%;
+    width: 90%;
+    margin-top: 20px;
+
 }
 
 .mainDescription .description-div h3 {
@@ -18,6 +18,7 @@
     text-transform: capitalize;
     font-weight: 600;
     text-align: right;
+    margin-bottom: 20px;
 }
 
 .mainDescription .description-div p {
@@ -28,16 +29,8 @@
     width: 100%;
 }
 
-/* .mainDescription .description-div span {
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-family: 'Nike';
-    font-weight: 700;
-} */
-
 .mainDescription .description-shoes {
-    width: 30%;
+    width: 90%;
     height: 300px
 }
 
@@ -46,3 +39,42 @@
     width: 100%;
     height: 100%;
 }
+
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 748px) {
+    
+    .mainDescription {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+        flex-direction: row;
+    
+        
+    }
+    
+    .mainDescription .description-div {
+        width: 30%;
+        margin-top: 0px;
+    }
+    
+    .mainDescription .description-shoes {
+        width: 30%;
+        height: 300px
+    }
+
+    .mainDescription .description-div h3 {
+        margin-bottom: 0px;
+    }
+    
+    .mainDescription .description-div p {
+        margin-bottom: 0px;
+    }
+    
+}
+
