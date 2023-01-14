@@ -2,6 +2,7 @@ import { useState } from "react";
 import Description from "./components/Description";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
+import TechSection from "./components/TechSection";
 import Timer from "./components/Timer";
 
 function App() {
@@ -17,9 +18,8 @@ function App() {
       {modal && <Timer handleModal={handleModal}/>}
       <Navbar/>
       <Main handleModal={handleModal} modal={modal}/> 
+      <TechSection/>
       <Description/>
-
-
     </div>
   );
 }

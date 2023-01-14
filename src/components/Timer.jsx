@@ -4,7 +4,7 @@ import "./Timer.css";
 const Timer = ({ handleModal }) => {
   const date = new Date().getTime();
 
-  const newDate = new Date("January 20, 2023 00:00:00").getTime();
+  const newDate = new Date("March 26, 2023 00:00:00").getTime();
 
   const finalDate = +newDate - date;
 

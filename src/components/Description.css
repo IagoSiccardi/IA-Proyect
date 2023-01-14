@@ -1,10 +1,15 @@
 .mainDescription {
-    height: 100vh;
+    height: 80vh;
+    display: grid;
+    place-content: center;
+   
+}
+
+.article-description {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column-reverse;
-   
 }
 
 .mainDescription .description-div {
@@ -47,15 +52,16 @@
 @media (min-width: 748px) {
     
     .mainDescription {
-        height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
+        height: 80vh;
+    }
+
+    .article-description {
         align-items: flex-start;
-        justify-content: center;
         gap: 40px;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     
-        
     }
     
     .mainDescription .description-div {

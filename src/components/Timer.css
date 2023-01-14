@@ -16,8 +16,8 @@
     position: absolute;
     place-content: center;
     top: calc(50vh - 15vh);
-    right: calc(50% - 20vh);
-    width: 40vh;
+    right: calc(50% - 40vw);
+    width: 80vw;
 }
 
 .timer-modal .close {
@@ -79,8 +79,8 @@
     .timer-modal {
         height: 30vh;
         top: calc(50vh - 15vh);
-        right: calc(50% - 25vh);
-        width: 50vh;
+        right: calc(50% - 40vw);
+        width: 80vw;
     }
     
     .timer-modal .timer-h2 {
@@ -103,8 +103,8 @@
     .timer-modal {
         height: 40vh;
         top: calc(50vh - 20vh);
-        right: calc(50% - 40vh);
-        width: 80vh;
+        right: calc(50% - 30vw);
+        width: 60vw;
     }
     
     .timer-modal .timer-h2 {
@@ -118,6 +118,15 @@
     .timer-modal .close {
         font-size: 3rem;
     }
+}
+
+@media (min-width: 1080px) {
+    .timer-modal {
+        top: calc(50vh - 20vh);
+        right: calc(50% - 20vw);
+        width: 40vw;
+    }
+
 }
 
 
