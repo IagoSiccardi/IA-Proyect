@@ -48,7 +48,7 @@ const Timer = ({ handleModal }) => {
   return (
     <section className="container-modal" onClick={(e) => e.target.className === "container-modal" && handleModal() } >
       <article className="timer-modal">
-        <span class="material-symbols-outlined close" onClick={handleModal}>
+        <span className="material-symbols-outlined close" onClick={handleModal}>
           close
         </span>
         <h2 className="timer-h2">Release date</h2>
