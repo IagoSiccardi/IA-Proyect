@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Description from "./components/Description";
+import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import TechSection from "./components/TechSection";
@@ -20,6 +21,7 @@ function App() {
       <Main handleModal={handleModal} modal={modal}/> 
       <TechSection/>
       <Description/>
+      <Footer/>
     </div>
   );
 }
