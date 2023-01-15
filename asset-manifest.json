@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/IagoSiccardi/IA-Proyect.git/static/css/main.7a8be3d3.css",
+    "main.js": "/IagoSiccardi/IA-Proyect.git/static/js/main.1822e259.js",
+    "static/media/shoes.png": "/IagoSiccardi/IA-Proyect.git/static/media/shoes.7929f5a6329c5c9237f7.png",
+    "static/media/shoesDesc.png": "/IagoSiccardi/IA-Proyect.git/static/media/shoesDesc.735ba28154defb19a95c.png",
+    "static/media/phoneShoes2.png": "/IagoSiccardi/IA-Proyect.git/static/media/phoneShoes2.d03e2eb9977040f90ffb.png",
+    "static/media/nikeIconWhite.png": "/IagoSiccardi/IA-Proyect.git/static/media/nikeIconWhite.8f0f28433d4b702ed26c.png",
+    "index.html": "/IagoSiccardi/IA-Proyect.git/index.html",
+    "main.7a8be3d3.css.map": "/IagoSiccardi/IA-Proyect.git/static/css/main.7a8be3d3.css.map",
+    "main.1822e259.js.map": "/IagoSiccardi/IA-Proyect.git/static/js/main.1822e259.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a8be3d3.css",
+    "static/js/main.1822e259.js"
+  ]
+}
