@@ -1,0 +1,21 @@
+.footer {
+    background-color: black;
+    padding: 25px;
+}
+
+.footer .footer-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .footer-section a {
+    display: grid;
+    place-content: center;
+    transition: .5s;
+}
+
+.footer .footer-section a:hover {
+    transform: scale(1.2);
+}
